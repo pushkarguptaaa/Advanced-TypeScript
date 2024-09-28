@@ -1,6 +1,14 @@
 "use strict";
-function sum(u1, u2) {
-    return u1.age + u2.age;
+// PICK
+function updateUser(updated) {
 }
-const sumages = sum({ name: "rui", age: 34 }, { name: "tht", age: 65 });
-console.log(sumages);
+const config = {
+    endpoint: "jbk",
+    apiKey: "jiil"
+};
+const users = {
+    age: 64
+};
+const userMap = new Map();
+userMap.set("kjfj", { name: "jk", email: "jnf", password: "klr" });
+console.log(userMap.get("kjfj"));

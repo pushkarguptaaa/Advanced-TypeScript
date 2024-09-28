@@ -32,3 +32,29 @@ function updateUser(updated: updated){
  }
 
 //  config.apiKey = ""
+
+// RECORD
+
+type Users = {
+    [key: string]: number
+}
+
+type UsersAge = Record<string, number>
+
+const users: UsersAge = {
+    age: 64
+}
+
+// MAP
+
+interface User1{
+    name: string
+    email: string
+    password: string
+}
+
+const userMap = new Map<string, User1>()
+
+userMap.set("kjfj", {name: "jk", email: "jnf", password: "klr"})
+
+console.log(userMap.get("kjfj"));
