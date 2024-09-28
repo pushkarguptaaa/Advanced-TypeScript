@@ -58,3 +58,7 @@ const userMap = new Map<string, User1>()
 userMap.set("kjfj", {name: "jk", email: "jnf", password: "klr"})
 
 console.log(userMap.get("kjfj"));
+
+// TYPE INFERENCE IN ZOD
+
+// export type finalSchema = z.infer<typeof userSchema>
